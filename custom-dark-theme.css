@@ -3,6 +3,14 @@ Custom Dark Mode based off of:
 https://github.com/SiriusXT/trilium-theme-blue
 dark-mode version:0.7.1 for trilium:>0.58.4
 */
+
+
+/* 
+    Changes:
+    - Made the width of quote blocks shorter
+    - Removed the radius of the note button's colors
+*/
+
 body{
   --h2-background-color: rgb(105 154 187 / 50%);
   --h3-background-color: rgb(112 175 164 / 40%);
