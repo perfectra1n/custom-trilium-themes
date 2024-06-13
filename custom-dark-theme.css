@@ -16,6 +16,7 @@ dark-mode version:0.7.1 for trilium:>0.58.4
     - Removed the 'text-indent: 2em;' for each paragraph
     - Set -more-accented-background-color: transparent;
     - Disable "font-size: 80% !important;" tweak so top bar buttons didn't break
+    - Removed the `div.tree:not()` statements so that the coloring would work on hoisted notes.
 */
 
 body{
@@ -114,32 +115,32 @@ body div.CodeMirror-vscrollbar::-webkit-scrollbar-thumb {
   border-color:#ccc;
 }
 
-div.tree:not(.fancytree-ext-filter.fancytree-ext-filter-hide)  li.fancytree-lastsib ul li[role='treeitem']:nth-of-type(6n) {
+div.tree  li.fancytree-lastsib ul li[role='treeitem']:nth-of-type(6n) {
   border-left: 3px solid #f4a6a670;
 
 }
 
-div.tree:not(.fancytree-ext-filter.fancytree-ext-filter-hide)  li.fancytree-lastsib ul li[role='treeitem']:nth-of-type(6n+1) {
+div.tree  li.fancytree-lastsib ul li[role='treeitem']:nth-of-type(6n+1) {
   border-left: 3px solid #99d0df70;
 
 }
 
-div.tree:not(.fancytree-ext-filter.fancytree-ext-filter-hide)  li.fancytree-lastsib ul li[role='treeitem']:nth-of-type(6n+2) {
+div.tree  li.fancytree-lastsib ul li[role='treeitem']:nth-of-type(6n+2) {
   border-left: 3px solid #b4afdf70;
 
 }
 
-div.tree:not(.fancytree-ext-filter.fancytree-ext-filter-hide)  li.fancytree-lastsib ul li[role='treeitem']:nth-of-type(6n+3) {
+div.tree  li.fancytree-lastsib ul li[role='treeitem']:nth-of-type(6n+3) {
   border-left: 3px solid #abd58b70;
 
 }
 
-div.tree:not(.fancytree-ext-filter.fancytree-ext-filter-hide)  li.fancytree-lastsib ul li[role='treeitem']:nth-of-type(6n+4) {
+div.tree  li.fancytree-lastsib ul li[role='treeitem']:nth-of-type(6n+4) {
   border-left: 3px solid #f3d27570;
 
 }
 
-div.tree:not(.fancytree-ext-filter.fancytree-ext-filter-hide)  li.fancytree-lastsib ul li[role='treeitem']:nth-of-type(6n+5) {
+div.tree  li.fancytree-lastsib ul li[role='treeitem']:nth-of-type(6n+5) {
   border-left: 3px solid #bccdf170;
 
 }
