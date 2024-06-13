@@ -662,3 +662,7 @@ div.note-title-widget.component > input.note-title{
 div.note-icon-widget > button.bx.bx-code.note-icon{
   margin-top: 2px !important;
 }
+
+span.fancytree-active .fancytree-title {
+  font-weight: normal;
+}
