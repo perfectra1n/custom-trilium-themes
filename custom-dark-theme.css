@@ -17,6 +17,7 @@ dark-mode version:0.7.1 for trilium:>0.58.4
     - Set -more-accented-background-color: transparent;
     - Disable "font-size: 80% !important;" tweak so top bar buttons didn't break
     - Removed the `div.tree:not()` statements so that the coloring would work on hoisted notes.
+    - Change the `--link-color` to #85c8ff
 */
 
 body{
@@ -84,13 +85,14 @@ body{
 
   --scrollbar-border-color: #333;
   --tooltip-background-color: #333;
-  --link-color: #4682B4;
+  --link-color: #85c8ff;
 
   --mermaid-theme: dark;
   --ck-color-code-block-label-background: #333;
     
     
 }
+
 body ::-webkit-calendar-picker-indicator {
   filter: invert(1);
 }
@@ -486,6 +488,8 @@ I think this was breaking the top bar on Tril
   font-size: 80% !important;
 }
 */
+
+
 .title-bar-buttons {
   font-size: 12px;
 }
@@ -657,6 +661,8 @@ div.shared-info-widget.alert.alert-warning.component{
 :focus-visible {
   outline: 2px solid var(--main-border-color);
 }
+
+
 div.note-title-widget.component > input.note-title{
   margin-top: 2px;
 }
