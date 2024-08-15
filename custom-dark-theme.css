@@ -20,24 +20,25 @@ dark-mode version:0.7.1 for trilium:>0.58.4
     - Change the `--link-color` to #85c8ff
 */
 
-body{
+body {
   --h2-background-color: rgb(105 154 187 / 50%);
   --h3-background-color: rgb(112 175 164 / 40%);
   --h4-background-color: rgb(215 187 162 / 40%);
   --h5-background-color: rgb(190 186 206 / 40%);
   --h6-background-color: rgb(197 197 197 / 40%);
-  --ck-color-table-focused-cell-background:#1E1E1E;
-  --ck-color-focus-border:#bfbfbf;
+  --ck-color-table-focused-cell-background: #1E1E1E;
+  --ck-color-focus-border: #bfbfbf;
 }
 
 :root {
   --theme-style: dark;
   --main-background-color: #1E1E1E;
   --main-text-color: #d4d4d4;
-  --main-border-color:  #333333;
+  --main-border-color: #333333;
   --more-accented-background-color: transparent;
 
-  --accented-background-color: #222;/*rgb(51, 51, 51);*/
+  --accented-background-color: #222;
+  /*rgb(51, 51, 51);*/
 
   --button-background-color: transparent;
   --button-border-color: #333;
@@ -89,8 +90,8 @@ body{
 
   --mermaid-theme: dark;
   --ck-color-code-block-label-background: #333;
-    
-    
+
+
 }
 
 body ::-webkit-calendar-picker-indicator {
@@ -100,13 +101,17 @@ body ::-webkit-calendar-picker-indicator {
 body .CodeMirror {
   filter: invert(88%) hue-rotate(180deg);
 }
-div.note-book-content.type-canvas>div.rendered-note-content>svg{
-        filter: invert(88%) hue-rotate(180deg);
-    }
+
+div.note-book-content.type-canvas>div.rendered-note-content>svg {
+  filter: invert(88%) hue-rotate(180deg);
+}
+
 .excalidraw.theme--dark {
   --theme-filter: invert(80%) hue-rotate(180deg) !important;
 }
-  div#launcher-pane .global-menu-button {
+
+
+div#launcher-pane .global-menu-button {
   filter: invert(0.5);
 }
 
@@ -114,35 +119,35 @@ div.note-book-content.type-canvas>div.rendered-note-content>svg{
 body div.CodeMirror-vscrollbar::-webkit-scrollbar-thumb {
   border-radius: 5px !important;
   background: #ddd !important;
-  border-color:#ccc;
+  border-color: #ccc;
 }
 
-div.tree  li.fancytree-lastsib ul li[role='treeitem']:nth-of-type(6n) {
+div.tree li.fancytree-lastsib ul li[role='treeitem']:nth-of-type(6n) {
   border-left: 3px solid #f4a6a670;
 
 }
 
-div.tree  li.fancytree-lastsib ul li[role='treeitem']:nth-of-type(6n+1) {
+div.tree li.fancytree-lastsib ul li[role='treeitem']:nth-of-type(6n+1) {
   border-left: 3px solid #99d0df70;
 
 }
 
-div.tree  li.fancytree-lastsib ul li[role='treeitem']:nth-of-type(6n+2) {
+div.tree li.fancytree-lastsib ul li[role='treeitem']:nth-of-type(6n+2) {
   border-left: 3px solid #b4afdf70;
 
 }
 
-div.tree  li.fancytree-lastsib ul li[role='treeitem']:nth-of-type(6n+3) {
+div.tree li.fancytree-lastsib ul li[role='treeitem']:nth-of-type(6n+3) {
   border-left: 3px solid #abd58b70;
 
 }
 
-div.tree  li.fancytree-lastsib ul li[role='treeitem']:nth-of-type(6n+4) {
+div.tree li.fancytree-lastsib ul li[role='treeitem']:nth-of-type(6n+4) {
   border-left: 3px solid #f3d27570;
 
 }
 
-div.tree  li.fancytree-lastsib ul li[role='treeitem']:nth-of-type(6n+5) {
+div.tree li.fancytree-lastsib ul li[role='treeitem']:nth-of-type(6n+5) {
   border-left: 3px solid #bccdf170;
 
 }
@@ -220,14 +225,28 @@ li.fancytree-lastsib ul li[role='treeitem']:nth-of-type(6n+5)>span.fancytree-nod
 }
 
 
-div.note-detail.component .hljs-built_in, div.note-detail.component .hljs-keyword, div.note-detail.component .hljs-name, div.note-detail.component .hljs-selector-tag, div.note-detail.component .hljs-tag {
-    color: #4aa8b7;
+div.note-detail.component .hljs-built_in,
+div.note-detail.component .hljs-keyword,
+div.note-detail.component .hljs-name,
+div.note-detail.component .hljs-selector-tag,
+div.note-detail.component .hljs-tag {
+  color: #4aa8b7;
 }
-.hljs-addition, .hljs-attribute, .hljs-literal, .hljs-section, .hljs-string, .hljs-template-tag, .hljs-template-variable, .hljs-title, .hljs-type{
-   color:  #bd3c16;
+
+.hljs-addition,
+.hljs-attribute,
+.hljs-literal,
+.hljs-section,
+.hljs-string,
+.hljs-template-tag,
+.hljs-template-variable,
+.hljs-title,
+.hljs-type {
+  color: #bd3c16;
 }
-div.note-detail.component .ck-content code{
-    background-color: var(--more-accented-background-color);
+
+div.note-detail.component .ck-content code {
+  background-color: var(--more-accented-background-color);
 }
 
 .ck-content pre {
@@ -237,8 +256,8 @@ div.note-detail.component .ck-content code{
 }
 
 
-div.tooltip-inner{
-    box-shadow:0px 0px 0px 0px #000 !important;
+div.tooltip-inner {
+  box-shadow: 0px 0px 0px 0px #000 !important;
 }
 
 div.modal.mx-auto.component {
@@ -256,8 +275,8 @@ div.component.note-split.type-text h1 {
 div.component.note-split.type-text h2:not(div.note-list-widget h2) {
   background: var(--h2-background-color);
   border-radius: 6px 6px 6px 6px;
-  
-  
+
+
   padding: 5px 0 2px 10px;
   text-shadow: 2px 2px 3px var(--main-background-color);
 }
@@ -265,8 +284,8 @@ div.component.note-split.type-text h2:not(div.note-list-widget h2) {
 div.component.note-split.type-text h3:not(div.note-list-widget h3) {
   background: var(--h3-background-color);
   border-radius: 6px 6px 6px 6px;
-  
-  
+
+
   padding: 4px 0 2px 10px;
   text-shadow: 2px 2px 3px var(--main-background-color);
 }
@@ -274,8 +293,8 @@ div.component.note-split.type-text h3:not(div.note-list-widget h3) {
 div.component.note-split.type-text h4:not(div.note-list-widget h4) {
   background: var(--h4-background-color);
   border-radius: 6px 6px 6px 6px;
-  
-  
+
+
   padding: 3px 0 2px 10px;
   text-shadow: 2px 2px 3px var(--main-background-color);
 }
@@ -283,8 +302,8 @@ div.component.note-split.type-text h4:not(div.note-list-widget h4) {
 div.component.note-split.type-text h5:not(.note-book-header):not(div.note-list-widget h5) {
   background: var(--h5-background-color);
   border-radius: 6px 6px 6px 6px;
-  
-  
+
+
   padding: 2px 0 2px 10px;
   text-shadow: 2px 2px 3px var(--main-background-color);
 }
@@ -292,8 +311,8 @@ div.component.note-split.type-text h5:not(.note-book-header):not(div.note-list-w
 div.component.note-split.type-text h6:not(div.note-list-widget h6) {
   background: var(--h6-background-color);
   border-radius: 6px 6px 6px 6px;
-  
-  
+
+
   padding: 1px 0 2px 10px;
   text-shadow: 2px 2px 3px var(--main-background-color);
 }
@@ -313,160 +332,188 @@ h6 {
 
 
 
-div.toc-widget span.toc>ol>li{
-  color:var(--h2-background-color);
+div.toc-widget span.toc>ol>li {
+  color: var(--h2-background-color);
 }
-div.toc-widget span.toc>ol>ol>li{
-  color:var(--h3-background-color);
+
+div.toc-widget span.toc>ol>ol>li {
+  color: var(--h3-background-color);
 }
-div.toc-widget span.toc>ol>ol>ol>li{
-  color:var(--h4-background-color);
+
+div.toc-widget span.toc>ol>ol>ol>li {
+  color: var(--h4-background-color);
 }
-div.toc-widget span.toc>ol>ol>ol>ol>li{
-  color:var(--h5-background-color);
+
+div.toc-widget span.toc>ol>ol>ol>ol>li {
+  color: var(--h5-background-color);
 }
-div.toc-widget span.toc>ol>ol>ol>ol>ol>li{
-  color:var(--h6-background-color);
+
+div.toc-widget span.toc>ol>ol>ol>ol>ol>li {
+  color: var(--h6-background-color);
 }
-div.toc-widget .toc ol{
-  padding-left:15px;
+
+div.toc-widget .toc ol {
+  padding-left: 15px;
 }
 
 
 
 
-div#rest-pane.component div.tab-row-widget.component{
-    box-shadow: 0px 1px #111;
+div#rest-pane.component div.tab-row-widget.component {
+  box-shadow: 0px 1px #111;
 }
-div.quick-search.input-group.input-group-sm.component{
-    box-shadow: 0px 1px #111;
+
+div.quick-search.input-group.input-group-sm.component {
+  box-shadow: 0px 1px #111;
 }
 
 div.note-book-card.block-link.expanded {
-    box-shadow: 1px 1px 1px 0px #111;
+  box-shadow: 1px 1px 1px 0px #111;
 }
 
-::-webkit-scrollbar-thumb{
-  background-color:#222 !important;
+::-webkit-scrollbar-thumb {
+  background-color: #222 !important;
 }
 
-div#toast-container{
-  right:0px !important;
-  bottom:0px !important;
-  top:auto !important;
-  width:auto !important;
+div#toast-container {
+  right: 0px !important;
+  bottom: 0px !important;
+  top: auto !important;
+  width: auto !important;
 }
 
 .switch-widget span.slider.checked {
   background-color: var(--primary-button-background-color) !important;
 }
 
-div.note-detail div.ck-horizontal-line.ck-widget{
+div.note-detail div.ck-horizontal-line.ck-widget {
   margin-top: 10px !important;
 }
-.ck-content hr{
+
+.ck-content hr {
   margin-bottom: 10px !important;
 }
 
-body,span.fancytree-title{
-  font-family:var(--detail-font-family) !important;
-  top:0px !important;
+body,
+span.fancytree-title {
+  font-family: var(--detail-font-family) !important;
+  top: 0px !important;
 }
-span:not(.fancytree-active) span.fancytree-title{
+
+span:not(.fancytree-active) span.fancytree-title {
   font-weight: 500 !important;
 }
 
-.global-menu{
- 
+.global-menu {
+
   width: auto !important;
 }
-#launcher-container  div.dropdown.right-dropdown-widget.dropright.component > button{
-  padding-left:8px !important;
+
+#launcher-container div.dropdown.right-dropdown-widget.dropright.component>button {
+  padding-left: 8px !important;
 }
+
 ul.fancytree-container li {
   contain: initial;
 }
-.global-menu-button{
+
+.global-menu-button {
   background-image: url("../../../favicon.ico") !important;
   background-size: 35px !important;
 }
-div#launcher-pane.component{
-width: 44px !important;
+
+
+div#launcher-pane.component {
+  width: 44px !important;
 }
-#launcher-pane .launcher-button{
- 
+
+#launcher-pane .launcher-button {
+
   padding: initial !important;
 }
-div.dropdown.global-menu.dropright.component > .icon-action{
-border:0px;
+
+div.dropdown.global-menu.dropright.component>.icon-action {
+  border: 0px;
 }
-.dropdown, .dropleft, .dropright, .dropup {
-position: initial;
+
+.dropdown,
+.dropleft,
+.dropright,
+.dropup {
+  position: initial;
 }
+
 .sync-status .sync-status-icon {
   padding: 13px 8px 8px 8px;
 }
-.sync-status .sync-status-icon span{
+
+.sync-status .sync-status-icon span {
   padding: 13px 8px 8px 8px;
 }
 
-div.quick-search.input-group.input-group-sm.component{
+div.quick-search.input-group.input-group-sm.component {
   align-content: center;
 }
 
-span.fancytree-node:not(.fancytree-folder) .fancytree-expander::before{
+span.fancytree-node:not(.fancytree-folder) .fancytree-expander::before {
   content: "\ec21" !important;
   visibility: visible !important;
   color: var(--left-pane-text-color) !important;
-  opacity:0.1;
-} 
+  opacity: 0.1;
+}
 
 #center-pane .title-row .note-icon-widget button {
   display: flex;
-  margin:0;
+  margin: 0;
 }
-input.note-title{
-  font-family:var(--detail-font-family) !important;
-  font-weight:bold;
+
+input.note-title {
+  font-family: var(--detail-font-family) !important;
+  font-weight: bold;
 }
-.bx-dock-right::before{
+
+.bx-dock-right::before {
   vertical-align: middle;
 }
 
-div#rest-pane > div.component{
+div#rest-pane>div.component {
   height: 30px !important;
   margin-bottom: 1px !important;
 }
 
-.note-new-tab{
+.note-new-tab {
   width: 30px !important;
   height: 30px !important;
   font-size: 19px !important;
 }
-div#rest-pane div.tab-row-widget div.tab-row-widget-container div.note-tab div.note-tab-wrapper{
+
+div#rest-pane div.tab-row-widget div.tab-row-widget-container div.note-tab div.note-tab-wrapper {
   padding: 2px 5px 1px 5px !important;
   height: 30px !important;
 }
 
-div.note-tab-wrapper div.note-tab-close.bx{
+div.note-tab-wrapper div.note-tab-close.bx {
   padding-bottom: 25px;
 }
+
 div#rest-pane div.tab-row-widget div.tab-row-widget-container div.note-tab div.note-tab-wrapper>div:hover {
   background: none;
 }
+
 div#rest-pane div.tab-row-widget div.tab-row-widget-container div.note-tab[active] .note-tab-wrapper div.note-tab-title::before {
   content: "\203B ";
   margin-right: 5px;
 }
 
-.fancytree-node{
-  padding-top:0px !important;
-  padding-bottom:0px !important;
+.fancytree-node {
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
 }
+
 span.fancytree-node.fancytree-active {
-  
+
   border-radius: 0px !important;
-  border: 0px  !important;
+  border: 0px !important;
 }
 
 span.button-widget.icon-action.bx.component.bx-history,
@@ -474,11 +521,12 @@ span.button-widget.icon-action.bx.component.bx-history,
   padding-top: 5px !important;
 }
 
-span.fancytree-node:hover{
-     border: 0px !important;
+span.fancytree-node:hover {
+  border: 0px !important;
 }
-span.fancytree-node{
-  border:0px !important;
+
+span.fancytree-node {
+  border: 0px !important;
 }
 
 /*
@@ -494,10 +542,10 @@ I think this was breaking the top bar on Tril
   font-size: 12px;
 }
 
-div.note-detail p{
+div.note-detail p {
   margin-top: 0.1rem !important;
   margin-bottom: 0.1rem !important;
-  
+
   text-align: justify;
   text-justify: distribute;
 }
@@ -506,10 +554,14 @@ div.note-detail p span.bx {
   display: inline;
 }
 
-dl, ol, ul{
+dl,
+ol,
+ul {
   padding-left: 2em;
 }
-div.note-detail ul>li,ol>li{
+
+div.note-detail ul>li,
+ol>li {
   text-align: justify;
   text-justify: distribute;
 }
@@ -528,13 +580,13 @@ p>span.ck-math-tex {
 }
 
 
-.ck-content p>span.image-inline{    
-  vertical-align: middle;  
-  
+.ck-content p>span.image-inline {
+  vertical-align: middle;
+
 }
 
 
-.ck-content figure.image{
+.ck-content figure.image {
   margin-top: 0.2rem;
   margin-bottom: 0.2rem;
 }
@@ -543,13 +595,14 @@ p>span.ck-math-tex {
 div.note-detail.component span.image-inline {
   border: 1px dashed var(--main-border-color);
 }
+
 div.note-detail.component figure.image {
   border: 1px dashed var(--main-border-color);
 }
 
 ::selection {
-  background-color: rgba(70,130,180,0.5) !important;
-  
+  background-color: rgba(70, 130, 180, 0.5) !important;
+
 }
 
 
@@ -584,20 +637,22 @@ div.attribute-list {
 .inherited-attributes-container {
   padding: 0px 12px 0px 12px !important;
 }
-.add-new-attribute-button,.save-attributes-button {
+
+.add-new-attribute-button,
+.save-attributes-button {
   bottom: 0px !important;
 }
 
 
 #center-pane div.note-detail-editable-text div.note-detail-editable-text-editor.ck.ck-content pre,
 #center-pane .CodeMirror pre code {
-  
+
   padding: 0.2em;
-  
+
   margin: 0.5rem auto 0.5rem;
-  
-  
-    border-radius: 5px;
+
+
+  border-radius: 5px;
 }
 
 .ck.ck-editor__editable pre[data-language]::after {
@@ -611,35 +666,39 @@ span.katex * {
 }
 
 .katex-display {
-margin: 0.1rem 0;
+  margin: 0.1rem 0;
 }
 
 
-.ck-content blockquote{
+.ck-content blockquote {
   font-style: initial !important;
-  color: #708faf  !important;
-  border-left: 5px solid var(--main-border-color)  !important;
-  background: none repeat scroll 0 0 rgba(102,128,153,.1)  !important;
+  color: #708faf !important;
+  border-left: 5px solid var(--main-border-color) !important;
+  background: none repeat scroll 0 0 rgba(102, 128, 153, .1) !important;
   margin: 3rem !important;
 }
-code{
-font-size: 100% !important;
+
+code {
+  font-size: 100% !important;
 }
 
-blockquote>p{
+blockquote>p {
   margin-bottom: 0 !important;
   text-indent: 1.7em !important;
 }
 
 
-.ck-content .table{
+.ck-content .table {
   margin-top: 0.1rem;
   margin-bottom: 0.1rem;
 }
-.ck-content .table table td, .ck-content .table table th{
+
+.ck-content .table table td,
+.ck-content .table table th {
   border: 1px solid var(--main-border-color) !important;
 }
-.ck-content .table table{
+
+.ck-content .table table {
   border: 1px solid var(--main-border-color) !important;
 }
 
@@ -652,9 +711,9 @@ blockquote>p{
   border: 1px solid var(--main-border-color) !important;
 }
 
-div.shared-info-widget.alert.alert-warning.component{
-    margin-top: 0;
-    margin-bottom: 0;
+div.shared-info-widget.alert.alert-warning.component {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 
@@ -663,10 +722,11 @@ div.shared-info-widget.alert.alert-warning.component{
 }
 
 
-div.note-title-widget.component > input.note-title{
+div.note-title-widget.component>input.note-title {
   margin-top: 2px;
 }
-div.note-icon-widget > button.bx.bx-code.note-icon{
+
+div.note-icon-widget>button.bx.bx-code.note-icon {
   margin-top: 2px !important;
 }
 
