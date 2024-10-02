@@ -20,7 +20,7 @@ dark-mode version:0.7.1 for trilium:>0.58.4
     - Change the `--link-color` to #85c8ff
     - Add some margin-top and margin-bottom to span.ck-list-bogus-paragraph to provide some space between the crowded lists
     - Changed the 0.1rem space to 1rem that existed between paragraphs 
-    - Added some spacing to the tabs
+    - Added some spacing to the note tabs at the top
 */
 
 body {
