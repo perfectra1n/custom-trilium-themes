@@ -18,6 +18,8 @@ dark-mode version:0.7.1 for trilium:>0.58.4
     - Disable "font-size: 80% !important;" tweak so top bar buttons didn't break
     - Removed the `div.tree:not()` statements so that the coloring would work on hoisted notes.
     - Change the `--link-color` to #85c8ff
+    - Add some margin-top and margin-bottom to span.ck-list-bogus-paragraph to provide some space between the crowded lists
+    - Changed the 0.1rem space to 1rem that existed between paragraphs 
 */
 
 body {
@@ -543,11 +545,20 @@ I think this was breaking the top bar on Tril
 }
 
 div.note-detail p {
-  margin-top: 0.1rem !important;
-  margin-bottom: 0.1rem !important;
+  margin-top: 1rem !important;
+  margin-bottom: 1rem !important;
 
   text-align: justify;
   text-justify: distribute;
+}
+
+.note-detail-editable-text *:not(figure,.include-note):first-child span.ck-list-bogus-paragraph {
+  margin-top: 1rem !important;
+  margin-bottom: 0.5rem !important;
+}
+
+span.ck-list-bogus-paragraph {
+  margin-bottom: 0.5rem !important;
 }
 
 div.note-detail p span.bx {
