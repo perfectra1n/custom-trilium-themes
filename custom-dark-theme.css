@@ -20,6 +20,7 @@ dark-mode version:0.7.1 for trilium:>0.58.4
     - Change the `--link-color` to #85c8ff
     - Add some margin-top and margin-bottom to span.ck-list-bogus-paragraph to provide some space between the crowded lists
     - Changed the 0.1rem space to 1rem that existed between paragraphs 
+    - Added some spacing to the tabs
 */
 
 body {
@@ -479,7 +480,7 @@ input.note-title {
 }
 
 div#rest-pane>div.component {
-  height: 30px !important;
+  height: 4rem !important;
   margin-bottom: 1px !important;
 }
 
@@ -490,12 +491,12 @@ div#rest-pane>div.component {
 }
 
 div#rest-pane div.tab-row-widget div.tab-row-widget-container div.note-tab div.note-tab-wrapper {
-  padding: 2px 5px 1px 5px !important;
-  height: 30px !important;
+  padding: 1rem 1rem 1rem 1rem !important;
+  height: 2rem !important;
 }
 
 div.note-tab-wrapper div.note-tab-close.bx {
-  padding-bottom: 25px;
+  padding-bottom: 1rem;
 }
 
 div#rest-pane div.tab-row-widget div.tab-row-widget-container div.note-tab div.note-tab-wrapper>div:hover {
