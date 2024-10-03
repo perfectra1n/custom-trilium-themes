@@ -555,7 +555,7 @@ div.note-detail p {
 
 .note-detail-editable-text *:not(figure,.include-note):first-child span.ck-list-bogus-paragraph {
   margin-top: 1rem !important;
-  margin-bottom: 0.5rem !important;
+  margin-bottom: 0.3rem !important;
 }
 
 span.ck-list-bogus-paragraph {
