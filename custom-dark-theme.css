@@ -21,6 +21,7 @@ dark-mode version:0.7.1 for trilium:>0.58.4
     - Add some margin-top and margin-bottom to span.ck-list-bogus-paragraph to provide some space between the crowded lists
     - Changed the 0.1rem space to 1rem that existed between paragraphs 
     - Added some spacing to the note tabs at the top
+    - Fix for TriliumNext icon
 */
 
 body {
@@ -418,11 +419,6 @@ span:not(.fancytree-active) span.fancytree-title {
 
 ul.fancytree-container li {
   contain: initial;
-}
-
-.global-menu-button {
-  background-image: url("../../../favicon.ico") !important;
-  background-size: 35px !important;
 }
 
 
