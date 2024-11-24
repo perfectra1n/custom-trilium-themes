@@ -22,7 +22,8 @@ dark-mode version:0.7.1 for trilium:>0.58.4
     - Changed the 0.1rem space to 1rem that existed between paragraphs 
     - Added some spacing to the note tabs at the top
     - Fix for TriliumNext icon
-    - Remove weird note title color 
+    - Remove weird note title color
+	- Added word wrapping for new code block
 */
 
 body {
@@ -742,4 +743,14 @@ div.note-icon-widget>button.bx.bx-code.note-icon {
 
 span.fancytree-active .fancytree-title {
   font-weight: normal;
+}
+
+.note-detail-printable.word-wrap pre.hljs,
+.note-detail-printable:not(.word-wrap) pre.hljs, .note-detail-printable:not(.word-wrap) pre code {
+    white-space: pre-wrap !important;
+    word-wrap: break-word !important;
+    overflow-wrap: break-word !important;
+    text-wrap: wrap !important;
+    white-space-collapse: preserve-breaks !important;
+    margin-right: 0 !important;
 }
