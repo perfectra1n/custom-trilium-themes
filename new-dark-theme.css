@@ -1,0 +1,121 @@
+/* Tree Node Coloring Theme
+   This theme provides visual hierarchy to the tree view by:
+   1. Adding colored left borders to tree items
+   2. Adding subtle background colors on hover
+   3. Adding slightly more visible background colors when items are active/selected
+   4. Colors cycle every 6 items using nth-of-type selectors
+*/
+
+/* Left borders for tree items */
+div.tree li.fancytree-lastsib ul li[role='treeitem']:nth-of-type(6n) {
+  border-left: 3px solid #f4a6a670;
+}
+
+div.tree li.fancytree-lastsib ul li[role='treeitem']:nth-of-type(6n+1) {
+  border-left: 3px solid #99d0df70;
+}
+
+div.tree li.fancytree-lastsib ul li[role='treeitem']:nth-of-type(6n+2) {
+  border-left: 3px solid #b4afdf70;
+}
+
+div.tree li.fancytree-lastsib ul li[role='treeitem']:nth-of-type(6n+3) {
+  border-left: 3px solid #abd58b70;
+}
+
+div.tree li.fancytree-lastsib ul li[role='treeitem']:nth-of-type(6n+4) {
+  border-left: 3px solid #f3d27570;
+}
+
+div.tree li.fancytree-lastsib ul li[role='treeitem']:nth-of-type(6n+5) {
+  border-left: 3px solid #bccdf170;
+}
+
+/* Hover backgrounds for tree items */
+li.fancytree-lastsib ul li[role='treeitem']:nth-of-type(6n):hover {
+  background-color: #f4a6a607 !important;
+}
+
+li.fancytree-lastsib ul li[role='treeitem']:nth-of-type(6n+1):hover {
+  background-color: #99d0df07 !important;
+}
+
+li.fancytree-lastsib ul li[role='treeitem']:nth-of-type(6n+2):hover {
+  background-color: #b4afdf07 !important;
+}
+
+li.fancytree-lastsib ul li[role='treeitem']:nth-of-type(6n+3):hover {
+  background-color: #abd58b07 !important;
+}
+
+li.fancytree-lastsib ul li[role='treeitem']:nth-of-type(6n+4):hover {
+  background-color: #f3d27507 !important;
+}
+
+li.fancytree-lastsib ul li[role='treeitem']:nth-of-type(6n+5):hover {
+  background-color: #bccdf107 !important;
+}
+
+/* Hover backgrounds for tree node spans */
+li.fancytree-lastsib ul li[role='treeitem']:nth-of-type(6n)>span.fancytree-node:hover {
+  background-color: #f4a6a607 !important;
+}
+
+li.fancytree-lastsib ul li[role='treeitem']:nth-of-type(6n+1)>span.fancytree-node:hover {
+  background-color: #99d0df07 !important;
+}
+
+li.fancytree-lastsib ul li[role='treeitem']:nth-of-type(6n+2)>span.fancytree-node:hover {
+  background-color: #b4afdf07 !important;
+}
+
+li.fancytree-lastsib ul li[role='treeitem']:nth-of-type(6n+3)>span.fancytree-node:hover {
+  background-color: #abd58b07 !important;
+}
+
+li.fancytree-lastsib ul li[role='treeitem']:nth-of-type(6n+4)>span.fancytree-node:hover {
+  background-color: #f3d27507 !important;
+}
+
+li.fancytree-lastsib ul li[role='treeitem']:nth-of-type(6n+5)>span.fancytree-node:hover {
+  background-color: #bccdf107 !important;
+}
+
+/* Active/selected node backgrounds */
+li.fancytree-lastsib ul li[role='treeitem']:nth-of-type(6n)>span.fancytree-node.fancytree-active {
+  background-color: #f4a6a610 !important;
+}
+
+li.fancytree-lastsib ul li[role='treeitem']:nth-of-type(6n+1)>span.fancytree-node.fancytree-active {
+  background-color: #99d0df10 !important;
+}
+
+li.fancytree-lastsib ul li[role='treeitem']:nth-of-type(6n+2)>span.fancytree-node.fancytree-active {
+  background-color: #b4afdf10 !important;
+}
+
+li.fancytree-lastsib ul li[role='treeitem']:nth-of-type(6n+3)>span.fancytree-node.fancytree-active {
+  background-color: #abd58b10 !important;
+}
+
+li.fancytree-lastsib ul li[role='treeitem']:nth-of-type(6n+4)>span.fancytree-node.fancytree-active {
+  background-color: #f3d27510 !important;
+}
+
+li.fancytree-lastsib ul li[role='treeitem']:nth-of-type(6n+5)>span.fancytree-node.fancytree-active {
+  background-color: #bccdf110 !important;
+}
+
+/* Color Reference
+Pink/Red:   #f4a6a6
+Light Blue: #99d0df
+Purple:     #b4afdf
+Green:      #abd58b
+Yellow:     #f3d275
+Blue:       #bccdf1
+
+Opacity levels:
+70 = 70% opacity (left borders)
+07 = 7% opacity  (hover states)
+10 = 16% opacity (active/selected states)
+*/
